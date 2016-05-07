@@ -1,0 +1,22 @@
+[
+    {
+        "type":"feature",
+        "name":"Suicide Squad",
+        "poster":"http://ia.media-imdb.com/images/M/MV5BOTY1MzU1MDQ1MF5BMl5BanBnXkFtZTgwNjAzMjY3NzE@._V1._SX40_CR0,0,40,54_.jpg",
+        "url":"movies/173a4075-37ed-4c45-a5ae-431e115a1db1"
+    },
+    {
+        "type":"feature",
+        "name":"Suits",
+        "poster":"http://ia.media-imdb.com/images/M/MV5BMTk1MjYzOTU2Nl5BMl5BanBnXkFtZTgwMzAxMTg5MTE@._V1._SX40_CR0,0,40,54_.jpg",
+        "url":"movies/7c3a9f27-3af9-4be3-b8b8-485cd9df7fb9"
+    },
+    {
+        "type":"feature",
+        "name":"The Virgin Suicides",
+        "poster":"http://ia.media-imdb.com/images/M/MV5BNjA1NjExMzkwN15BMl5BanBnXkFtZTcwMjEzMjk3OA@@._V1._SX40_CR0,0,40,54_.jpg",
+        "url":"movies/be0771e5-37d8-4b38-b41b-e9090d0455f0"
+    }
+]
+
+

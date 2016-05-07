@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinema Ads</title>
+  <!--[if lt IE 9]> 
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+  <![endif]-->
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,600,600italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ 
+  <!-- Header --> 
+  <header>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="logo" width="138" height="33">
+          </a>
+        </div>
+
+        <ul class="nav navbar-nav" id="leftmenu">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dashboard</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Movie offers</a></li>
+              <li class="dropdown2">
+                <a class="dropbtn2" href="#">Campaigns</a>
+                <ul class="dropdown-content2">
+                  <li><a href="#">Movie offers</a></li>
+                  <li><a href="#">Campaigns</a></li>
+                  <li><a href="#">Playlists</a></li>
+                  <li><a href="#">Campaigns</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Playlists</a></li>
+              <li><a href="#">Campaigns</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Planning</a></li>
+          <li><a href="#">Reports</a></li>
+          <li><a href="#">Media</a></li>
+          <li><a href="#">Users</a></li>
+        </ul><!-- End #leftmenu -->
+
+        <!-- for small devices -->
+        <nav class="nav navbar-nav leftmenu-xs" id="leftmenu-sm">
+            <button type="button" class="navbar-toggle">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+        </nav><!-- End #leftmenu-sm -->
+
+        <nav class="nav navbar-nav" id="leftmenu-xs">
+            <button type="button" class="navbar-toggle">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+        </nav><!-- End #leftmenu-sm -->
+          
+      <!-- Right navbar menu -->
+        <ul class="nav navbar-nav navbar-right">
+          <li id="searchBtnOpen">
+            <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+          </li>
+          <li class="dropdown" id="notifications">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              <i class="icon ion-android-notifications"></i>
+                <span class="label label-warning">3</span>
+            </a>
+            <ul class="dropdown-menu" id="bell">
+              <li id="movie"><a href="#"><img src="images/movie-icon.png" alt="Movie icon"> 5 nauji filmai</a></li>
+              <li id="attention"><a href="#"><img src="images/bell-icon.png" alt="Bell icon">10 RK reikalauja jūsų dėmesio</a></li>
+              <li id="clip" class="film"><a href="#"><img src="images/film-icon.png" alt="Film icon">7 nauji klipai</a></li>
+              <li style="text-align: center;"><a href="#">Peržiūrėti visus</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><i class="fa fa-list-ul" aria-hidden="true"></i></a></li>
+          <li class="user">
+            <a href="#">
+              <img src="images/user1.jpg" class="user-img" alt="User Image">
+              <span>Vardenis Pavardenis</span>
+            </a>
+          </li>
+          <li class="settings" style="cursor:pointer"><a href="#" class="sett"><i class="fa fa-cogs" aria-hidden="true"></i></a></li>
+        </ul><!-- End .navbar-right -->
+
+      </div>
+    </nav>
+
+    <!-- Nav-search bar -->
+    <div id="nav-search">
+      <span>
+        <a href="javascript:void(0)" class="closebtn">×</a>
+      </span>
+        <form class="searchForm">
+          <div style="margin: 0 auto; width: 100%; height: 50px;">
+            <div id="searchBtn">
+              <button href="#" type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+            <input type="search" autofocus="autofocus" placeholder="Pavadinimas..." name="mySearch" id="mySearch1">
+          </div>
+        </form>
+    </div>
+  </header>
+
+  <!-- Left sidebar meenu for small devices -->
+  <aside id="myLeftMenu" class="sidebar-left">
+    <div class="sidebar-left-content">
+      <ul class="sidebar-left-menu">
+        <li>
+          <a data-toggle="collapse" href="#collapse1" id="dashboard"><i class="fa fa-dashboard"></i> <span>Dashboard</span> <i class="icon ion-arrow-down-b pull-right" style="margin-right: 15px;"></i></a>
+          <ul id="collapse1" class="collapse dashboard-menu">
+            <li><a href="#"><i class="fa fa-circle-o" aria-hidden="true"></i> <span>Movie offers</span></a></li>
+            <li class="campaigns-menu">
+              <a data-toggle="collapse" href="#collapse2" id="campaigns"><i class="fa fa-circle-o" aria-hidden="true"></i> <span>Campaigns</span> <i class="fa fa-angle-right pull-right" style="margin-right: 15px;"></i></a>
+              <ul id="collapse2" class="collapse campaigns-menu-content">
+                <li><a href="#"><i class="fa fa-square-o" aria-hidden="true"></i> <span>Movie offers</span></a></li>
+                <li><a href="#"><i class="fa fa-square-o" aria-hidden="true"></i> <span>Campaigns</span></a></li>
+                <li><a href="#"><i class="fa fa-square-o" aria-hidden="true"></i> <span>Playlists</span></a></li>
+                <li><a href="#"><i class="fa fa-square-o" aria-hidden="true"></i> <span>Campaigns</span></a></li>
+              </ul>
+            </li>
+            <li><a href="#"><i class="fa fa-circle-o" aria-hidden="true"></i> <span>Playlists</span> </a></li>
+            <li><a href="#"><i class="fa fa-circle-o" aria-hidden="true"></i> <span>Campaigns</span></a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> <span>Planning</span></a></li>
+        <li><a href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i> <span>Reports</span></a></li>
+        <li><a href="#"><i class="fa fa-film" aria-hidden="true"></i> <span>Media</span></a></li>
+        <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i> <span>Users</span></a></li>
+      </ul>
+    </div>
+  </aside><!-- End #sidebar-left -->
+
+<!-- Setings' sub-menu -->
+  <aside id="myNav" class="settings-control">
+    <div class="settings-control-content">
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#home"><i class="fa fa-wrench" aria-hidden="true"></i></a></li>
+        <li><a data-toggle="tab" href="#menu1"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        <li><a data-toggle="tab" href="#menu2"><i class="fa fa-cogs" aria-hidden="true"></i></a></li>
+      </ul>
+      
+      <div class="tab-content">
+        <!-- #home -->
+        <div id="home" class="tab-pane fade in active">
+          <h4>Layout Options</h4>
+          <div class="form-group">
+            <label class="sidebar-subheading" for="cbox1">Fixed layout
+              <input type="checkbox" class="pull-right" id="cbox1">
+            </label>
+            <p>Activate the fixed layout. You can't use fixed and boxed layouts together</p>
+          </div><!-- end .form-group -->
+
+          <div class="form-group">
+            <label class="sidebar-subheading" for="cbox2">Boxed Layout
+              <input type="checkbox" class="pull-right" id="cbox2">
+            </label>
+            <p>Activate the boxed layout</p>
+          </div><!-- end .form-group -->
+
+          <div class="form-group">
+            <label class="sidebar-subheading" for="cbox3">Toggle Sidebar
+              <input type="checkbox" class="pull-right" id="cbox3">
+            </label>
+            <p>Toggle the left sidebar's state (open or collapse)</p>
+          </div><!-- end .form-group -->
+
+          <div class="form-group">
+            <label class="sidebar-subheading" for="cbox4">Sidebar Expand on Hover
+              <input type="checkbox" class="pull-right" id="cbox4">
+            </label>
+            <p>Let the sidebar mini expand on hover</p>
+          </div><!-- end .form-group -->
+
+          <div class="form-group">
+            <label class="sidebar-subheading" for="cbox5">Toggle Sidebar
+              <input type="checkbox" class="pull-right" id="cbox5">
+            </label>
+            <p>Toggle the left sidebar's state (open or collapse)</p>
+          </div><!-- end .form-group -->
+
+          <div class="form-group">
+            <label class="sidebar-subheading" for="cbox6">Sidebar Expand on Hover
+              <input type="checkbox" class="pull-right" id="cbox6">
+            </label>
+            <p>Let the sidebar mini expand on hover</p>
+          </div><!-- end .form-group --> 
+        </div><!-- end #home -->
+
+        <!-- #menu1 -->
+        <div id="menu1" class="tab-pane fade">
+          <h4>Recent Activity</h4>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <h4>Recent Activity</h4>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <h4>Recent Activity</h4>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div><!-- end #menu1 -->
+
+        <!-- #menu2 -->
+        <div id="menu2" class="tab-pane fade">
+          <form method="post">
+          <h4 class="sidebar-heading">General Settings</h4>
+
+          <div class="form-group">
+            <label class="sidebar-subheading">
+              Report panel usage
+              <input type="checkbox" class="pull-right" checked>
+            </label>
+            <p>Some information about this general settings option</p>
+          </div><!-- end .form-group -->
+
+          <div class="form-group">
+            <label class="sidebar-subheading">
+              Allow mail redirect
+              <input type="checkbox" class="pull-right" checked>
+            </label>
+            <p>Other sets of options are available</p>
+          </div><!-- end .form-group -->
+
+          <div class="form-group">
+            <label class="sidebar-subheading">
+              Expose author name in posts
+              <input type="checkbox" class="pull-right" checked>
+            </label>
+            <p>Allow the user to show his name in blog posts</p>
+          </div><!-- end .form-group -->
+
+          <h4 class="sidebar-heading">Chat Settings</h4>
+
+          <div class="form-group">
+            <label class="sidebar-subheading">
+              Show me as online
+              <input type="checkbox" class="pull-right" checked>
+            </label>
+          </div><!-- end .form-group -->
+
+          <div class="form-group">
+            <label class="sidebar-subheading">
+              Turn off notifications
+              <input type="checkbox" class="pull-right">
+            </label>
+          </div><!-- end .form-group -->
+
+          <div class="form-group">
+            <label class="sidebar-subheading">
+              Delete chat history
+              <a href="№" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
+            </label>
+          </div><!-- end .form-group -->
+          </form>
+        </div><!-- end .menu2 -->
+
+      </div><!-- end .tab-content -->
+
+    </div><!-- end .settings-control-content -->
+  </aside>
+
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>

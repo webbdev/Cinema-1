@@ -1,0 +1,17 @@
+[
+    {
+        "type":"movie",
+        "message":"5 nauji filmai",
+        "url":"media/movies/new"
+    },
+    {
+        "type":"attention",
+        "message":"10 RK reikalauja jūsų dėmesio",
+        "url":"media/media-items/pending"
+    },
+    {
+        "type":"media-clip",
+        "message":"7 nauji klipai",
+        "url":"media/media-clips/new"
+    }
+]

@@ -1,0 +1,52 @@
+[
+    {
+        "name":"Dashboard",
+        "url":"/"
+    },
+    {
+        "name":"Planning",
+        "children":
+        [
+            {
+                "name":"Movie offers",
+                "url":"planning/movie-offers"
+            },
+            {
+                "name":"Campaigns",
+                "separator":true,
+                "children":
+                [
+                    {
+                        "name":"Current campaings",
+                        "url":"planning/campaings"
+                    },
+                    {
+                        "name":"Pending campaings",
+                        "url":"planning/campaings/pending"
+                    },
+                    {
+                        "name":"Archive campaings",
+                        "url":"planning/campaings/archive"
+                    }
+                ]
+            },
+            {
+                "name":"Playlists",
+                "url":"planning/playlists",
+                "separator":true
+            }
+        ]
+    },
+    {
+        "name":"Reports",
+        "url":"/reports/"
+    },
+    {
+        "name":"Media",
+        "url":"/media/"
+    },
+    {
+        "name":"Users",
+        "url":"/users/"
+    },
+]
