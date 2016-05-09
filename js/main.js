@@ -69,7 +69,7 @@ $(document).ready(function () {
 
     // Change angle icon on click 
     $("#campaigns").on('click', function () {
-        $("#campaigns .fa").toggleClass("fa fa-angle-right fa fa-angle-up");
+        $("#campaigns .fa").toggleClass("fa fa-angle-right fa fa-angle-down");
     });
 
 });
