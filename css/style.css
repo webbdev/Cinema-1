@@ -823,7 +823,7 @@ input[type=radio] {
 }
 
 
-@media (max-width: 620px) {
+@media (max-width: 622px) {
 
   header .container-fluid {
     padding-right: 0 !important;
